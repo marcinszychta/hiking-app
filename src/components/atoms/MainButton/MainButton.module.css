@@ -1,0 +1,29 @@
+.mainButton {
+  width: 60vw;
+  height: 9vh;
+  margin: 1vh;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  box-sizing: border-box;
+  border: 3px solid #ffff;
+  background: #ffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.outline {
+  background: #fa9c57;
+  color: #ffff;
+  border: 3px solid #ffff;
+}
+
+.carryOn {
+  background: #fa9c57;
+  color: #ffff;
+  border: none;
+}
+
+.absolutePosition {
+  position: absolute;
+  bottom: 3vh;
+}

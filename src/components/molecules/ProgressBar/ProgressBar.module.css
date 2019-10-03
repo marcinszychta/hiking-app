@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  margin: 3vh 0 4vh 0;
+}
+
+.outlineDot {
+  width: 12px;
+  height: 12px;
+  box-sizing: border-box;
+  border: 1px solid #f07c27;
+  border-radius: 50px;
+  background: #fff5ef;
+  display: flex;
+  margin: 3px;
+}
+
+.filledDot {
+  width: 12px;
+  height: 12px;
+  box-sizing: border-box;
+  border: 1px solid #f07c27;
+  border-radius: 50px;
+  background: #f07c27;
+  display: flex;
+  margin: 3px;
+}
