@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { getHikes } from "../../services/hikingService";
 
 import TrialOverview from "../../components/organisms/TrailOverview/TrailOverview";
-import Layout from "../../components/organisms/Layout/Layout";
+import Navbar from "../../components/atoms/Navbar/Navbar";
 
 import styles from "./HomePage.module.css";
 
@@ -21,7 +21,8 @@ class HomePage extends Component {
 
   render() {
     return (
-      <Layout lightOrange>
+      <div className={styles.wrapper}>
+        <Navbar />
         <h3 className={styles.homeTitle}>Your trails</h3>
         {this.state.hikes.map(hike => (
           <TrialOverview
@@ -31,7 +32,7 @@ class HomePage extends Component {
             liked={hike.liked}
           />
         ))}
-      </Layout>
+      </div>
     );
   }
 }

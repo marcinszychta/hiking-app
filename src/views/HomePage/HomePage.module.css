@@ -1,6 +1,11 @@
+.wrapper {
+  background: #fff5ef;
+}
+
 .homeTitle {
   font-family: "Montserrat", sans-serif;
   font-weight: 550;
   color: #fa9c57;
-  margin: 3vh 0 2vh 0;
+  margin: -5vh 0 2vh 0;
+  text-align: center;
 }
