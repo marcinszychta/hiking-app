@@ -1,5 +1,12 @@
-.image {
+.homeImage {
   border-radius: 10px;
   width: 90vw;
   height: 30vh;
+}
+
+.selectedImage {
+  width: 100vw;
+  height: 36vh;
+  position: relative;
+  top: -8vh;
 }

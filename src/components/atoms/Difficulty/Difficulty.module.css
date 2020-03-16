@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  margin: 3vh 0 4vh 0;
+}
+
+.wrapper p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5vw;
+  position: relative;
+  top: -0.4vh;
+}
+
+.outlineDot {
+  width: 10px;
+  height: 10px;
+  box-sizing: border-box;
+  border: 1px solid #1a1a1a;
+  border-radius: 50px;
+  background: #fff5ef;
+  display: flex;
+  margin: 3px;
+}
+
+.filledDot {
+  width: 10px;
+  height: 10px;
+  box-sizing: border-box;
+  border: 1px solid #1a1a1a;
+  border-radius: 50px;
+  background: #1a1a1a;
+  display: flex;
+  margin: 3px;
+}

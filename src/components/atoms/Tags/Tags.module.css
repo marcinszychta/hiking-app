@@ -1,0 +1,57 @@
+.wrapper {
+  width: max-content;
+  height: 9vh;
+  background-color: inherit;
+  color: #ffff;
+  border: 3px solid #fa9c57;
+  border-radius: 30px;
+  box-sizing: border-box;
+  margin: 5px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.wrapper p {
+  font-size: 0.9em;
+  color: #fa9c57;
+}
+
+.iconWrapper {
+  cursor: pointer;
+  box-sizing: border-box;
+  margin: 0 5px;
+  position: relative;
+  top: -4px;
+}
+
+.line1 {
+  width: 12px;
+  height: 2px;
+  background-color: #fa9c57;
+  transform: rotate(45deg);
+}
+
+.line2 {
+  width: 12px;
+  height: 2px;
+  background-color: #fa9c57;
+  transform: rotate(-45deg);
+  margin-top: -2px;
+}
+
+.veritcal {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

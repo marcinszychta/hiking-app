@@ -31,7 +31,7 @@ class OnBoardingHome extends Component {
         <MainButton buttonMsg={"Sign up"} />
         <MainButton
           buttonMsg={"Log in"}
-          outline={true}
+          outline
           onClick={this.handleComponentTransition}
         />
       </Layout>

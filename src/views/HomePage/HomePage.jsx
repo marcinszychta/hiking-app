@@ -1,40 +1,36 @@
-import React, { Component } from "react";
-import { getHikes } from "../../services/hikingService";
+import React, { useState } from "react";
+import { Redirect } from "react-router-dom";
 
 import TrialOverview from "../../components/organisms/TrailOverview/TrailOverview";
 import Navbar from "../../components/atoms/Navbar/Navbar";
 
 import styles from "./HomePage.module.css";
 
-class HomePage extends Component {
-  state = {
-    hikes: getHikes()
+const HomePage = ({ hikes, onLike, onHikeChange }) => {
+  const [forward, setForward] = useState(false);
+
+  const onChange = hike => {
+    onHikeChange(hike);
+    setForward(true);
   };
 
-  handleLike = hike => {
-    let hikes = [...this.state.hikes];
-    const index = hikes.indexOf(hike);
-    hikes[index] = { ...hike };
-    hikes[index].liked = !hikes[index].liked;
-    this.setState({ hikes });
-  };
+  if (forward) return <Redirect push to="/hike" />;
 
-  render() {
-    return (
-      <div className={styles.wrapper}>
-        <Navbar />
-        <h3 className={styles.homeTitle}>Your trails</h3>
-        {this.state.hikes.map(hike => (
-          <TrialOverview
-            key={hike._id}
-            hikes={hike}
-            onLike={this.handleLike}
-            liked={hike.liked}
-          />
-        ))}
-      </div>
-    );
-  }
-}
+  return (
+    <div className={styles.wrapper}>
+      <Navbar />
+      <h3 className={styles.homeTitle}>Your trails</h3>
+      {hikes.map(hike => (
+        <TrialOverview
+          key={hike._id}
+          hikes={hike}
+          onLike={onLike}
+          liked={hike.liked}
+          onHikeChange={() => onChange(hike)}
+        />
+      ))}
+    </div>
+  );
+};
 
 export default HomePage;

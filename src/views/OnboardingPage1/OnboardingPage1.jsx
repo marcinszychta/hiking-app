@@ -17,7 +17,6 @@ class OnboardingQuestion1 extends Component {
   };
 
   handleSelect = answer => {
-    console.log(answer);
     let answers = [...this.state.answers];
     const index = answers.indexOf(answer);
     answers[index] = { ...answer };

@@ -1,0 +1,28 @@
+.wrapper {
+  position: relative;
+  top: -10vh;
+}
+
+.wrapper p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4vw;
+}
+
+.tagWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 90vw;
+}
+
+.topWrapperButton {
+  width: 40vw;
+  height: 9vh;
+  margin: 1vh;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+
+  background: #fff5ef;
+  font-family: "Montserrat", sans-serif;
+}
